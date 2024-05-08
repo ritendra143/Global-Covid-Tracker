@@ -1,7 +1,6 @@
 The Covid World Tracker
 
 The webpage shows the statistics of current covid-19 cases around the world using graphs and maps.
-https://tanyagupta1901.github.io/The-World-Covid-Tracker/
 
 The data is fetched from diseases.sh api
  It is built using react js frontend framework.

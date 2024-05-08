@@ -1,0 +1,335 @@
+@import"https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap";
+
+html
+{
+    margin : 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+  margin:0;
+  padding:0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding : 1rem;
+    position: relative;
+    top : 0;
+    left: 0;
+    right : 0;
+    height:30px;
+    
+}
+.parentDiv
+{   
+    display: flex;
+    justify-content: space-evenly;
+    margin : 20px 5px 20px 5px;
+    padding-bottom: 20px;
+    z-index:-1;
+  
+}
+/* .leaflet-container
+{
+  z-index:-1;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .leaflet-popup-tip-container
+{
+  z-index: 2;
+} */
+.cardClass
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+    width: 100%;
+}
+.centerColumn
+{
+    flex: 0.50;
+    align-items: center;
+    padding: 5px;
+    
+}
+.centerClass
+{
+  /* border: 3px solid rgba(0,255,255);
+  border-radius : 1rem; */
+  margin-top : 50px ;   
+}
+/* .tablediv
+{
+  flex: 0.50;
+  display: flex;
+  justify-content: space-evenly;
+  height: 70%;
+} */
+.tablediv
+{
+  flex: 0.50;
+  display: flex;
+  justify-content: space-evenly;
+  height: 70%;
+}
+.caseTableContainer
+{
+height: 235px;
+}
+.casesTable
+{
+  height:100%;
+  overflow: scroll;
+    overflow-x: hidden;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: rgba(0, 255, 255, 0.25) 0px 14px 28px, rgba(0, 255, 255, 0.22) 0px 10px 10px;
+
+}
+.casesClass
+{
+    height:400px;
+    flex: 0.48; 
+    padding: 5px;
+    border: 3px solid cyan;
+    border-radius : 1rem;
+    /* grid-column: 3; */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* border: 8px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-radius: 1em;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
+}
+.deathsClass
+{   
+  flex: 0.48; 
+    padding: 5px;
+    border: 3px solid cyan;
+    border-radius : 1rem;
+    height:300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+.dbhead
+{
+  font-size: 25px;
+  padding : 2px 3px 10px 2px;
+  font-family: 'Orbitron', sans-serif;
+  padding-bottom: 30px;
+  position: relative;
+  top: 0px;
+}
+.cardStyling
+{
+  width:100%;
+  height:100%;
+  background-color: #060c21;
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  margin : 10px;
+  border-radius : 8%;
+  /* box-shadow: 3px 3px 3px rgba(0,255,255,.5); */
+  box-shadow: rgba(0, 255, 255, 0.25) 0px 14px 28px, rgba(0, 255, 255, 0.22) 0px 10px 10px;
+  color : cyan;
+}
+.cardfigures
+{
+  text-align:center;
+  background-color:#060c21;
+  color:cyan;
+  border: 0;
+  font-size: 20px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid black;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }   
+
+  @media screen and (max-width:1190px) 
+  {
+      .parentDiv
+      {
+          display: block;
+      }
+      .cardfigures{
+        font-size:15px;
+      }
+      .cardStyling
+      {
+        margin: 0px;
+      }
+      .tablediv
+      {
+        flex:0.4;
+      }
+      .centerColumn
+      {
+        flex:0.4;
+      }
+  } 
+  .map
+  {
+    height: 390px;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  }
+
+  .map .leaflet-container {
+    height: 100%;
+    border-radius: 12px;
+  }
+  select {
+    background:#060c21;
+    color:cyan;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border: 3px solid cyan;
+    border-radius : 1rem;
+  }
+
+  .popup
+  {
+    width : 200px;
+    background-color: #060c21;
+    padding: 2px;
+  }
+
+  .popup input
+  {
+    border:none;
+    width:75px;
+  }
+  .phead
+  {
+    font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .casesTable::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.casesTable::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+  border-radius: 10px;
+  border : 1px solid cyan;
+
+}
+
+.casesTable::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: cyan;
+  height: 70px;
+}
+.graph
+{
+  flex : 0.5;
+  max-width: 70%;
+  max-height : 50%;
+}
+footer
+{
+  
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right:0;
+ padding-top: 10px;
+  text-align: center;
+  height:100px;
+  font-family: 'Original Surfer', cursive;
+  padding:0px;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.contact
+{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left : 43%;
+  margin-top: 0px;
+  padding-top: 0px;
+  
+}
+
+.contact li
+{
+  margin:10px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
